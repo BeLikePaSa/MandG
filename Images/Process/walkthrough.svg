@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Walkthrough illustration</title>
+  <desc id="desc">A colorful three-dimensional home with a completion check mark</desc>
+  <defs>
+    <linearGradient id="front" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#7ee0c2"/><stop offset="1" stop-color="#36a8a4"/></linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#527ed0"/><stop offset="1" stop-color="#3853a8"/></linearGradient>
+    <linearGradient id="roof" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffbd73"/><stop offset="1" stop-color="#f17668"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="170%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#253e76" flood-opacity=".24"/></filter>
+  </defs>
+  <ellipse cx="318" cy="309" rx="190" ry="20" fill="#334e91" opacity=".14"/>
+  <g filter="url(#shadow)" stroke-linejoin="round">
+    <path d="m126 171 178-111v192L126 302Z" fill="url(#front)" stroke="#eafff2" stroke-width="5"/>
+    <path d="m304 60 202 112v130l-202-50Z" fill="url(#side)" stroke="#dce5ff" stroke-width="5"/>
+    <path d="m103 163 201-126 224 124-35 20L304 77 138 183Z" fill="url(#roof)" stroke="#fff0d8" stroke-width="6"/>
+    <path d="m263 289 2-92 77-43v117" fill="#f7bd68" stroke="#fff0da" stroke-width="5"/>
+    <path d="m159 190 54-34v57l-54 34Z" fill="#fff0c1" stroke="#e7ffed" stroke-width="5"/>
+    <path d="m374 162 65 36v56l-65-32Z" fill="#ffcb7b" stroke="#e6edff" stroke-width="5"/>
+    <path d="m420 92 28-18 37 21-29 19Z" fill="#fff2cb" stroke="#fff" stroke-width="4"/>
+    <path d="m437 91 19 18 43-50" fill="none" stroke="#f3ffe1" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Preparation illustration</title>
+  <desc id="desc">A colorful three-dimensional toolbox and brush for surface preparation</desc>
+  <defs>
+    <linearGradient id="front" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#ffbf69"/><stop offset="1" stop-color="#f07d51"/></linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d85553"/><stop offset="1" stop-color="#a63651"/></linearGradient>
+    <linearGradient id="lid" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#8de4cd"/><stop offset="1" stop-color="#2c9e9b"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#482d45" flood-opacity=".24"/></filter>
+  </defs>
+  <ellipse cx="319" cy="306" rx="190" ry="22" fill="#5b3b55" opacity=".14"/>
+  <g filter="url(#shadow)" stroke-linejoin="round">
+    <path d="m144 147 74-46 278 4-76 48Z" fill="url(#lid)" stroke="#e5fff5" stroke-width="5"/>
+    <path d="m420 153 76-48v137l-76 51Z" fill="url(#side)" stroke="#ffd5b8" stroke-width="5"/>
+    <path d="m144 147 276 6v140l-276-18Z" fill="url(#front)" stroke="#fff0ce" stroke-width="5"/>
+    <path d="m222 137 13-50c5-19 20-31 40-31h69c19 0 33 12 39 31l14 54" fill="none" stroke="#438f92" stroke-width="18" stroke-linecap="round"/>
+    <path d="M145 193 420 207M279 197v91" fill="none" stroke="#b34f51" stroke-width="7" opacity=".8"/>
+    <rect x="185" y="214" width="45" height="30" rx="9" fill="#fff0bd"/>
+    <rect x="335" y="218" width="45" height="30" rx="9" fill="#fff0bd"/>
+    <path d="m435 86 77-36 34 29-83 40Z" fill="#624773" stroke="#f6d0eb" stroke-width="5"/>
+    <path d="m483 119-92 101" stroke="#f0a15c" stroke-width="21" stroke-linecap="round"/>
+    <path d="m377 227 32-30 25 23-30 34Z" fill="#63cbb7" stroke="#e2fff4" stroke-width="5"/>
+  </g>
+</svg>

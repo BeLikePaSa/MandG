@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Painting illustration</title>
+  <desc id="desc">A bright three-dimensional paint roller with colorful fresh paint strokes</desc>
+  <defs>
+    <linearGradient id="roller" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#ffb56c"/><stop offset=".5" stop-color="#f47c69"/><stop offset="1" stop-color="#d65372"/></linearGradient>
+    <linearGradient id="end" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b64e78"/><stop offset="1" stop-color="#773d78"/></linearGradient>
+    <linearGradient id="handle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9be7d2"/><stop offset="1" stop-color="#38a5a0"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#40325d" flood-opacity=".25"/></filter>
+  </defs>
+  <ellipse cx="320" cy="304" rx="202" ry="20" fill="#423864" opacity=".14"/>
+  <g filter="url(#shadow)" stroke-linejoin="round">
+    <path d="M151 80h259c17 0 31 14 31 31v69c0 17-14 31-31 31H151c-17 0-31-14-31-31v-69c0-17 14-31 31-31Z" fill="url(#roller)" stroke="#fff0de" stroke-width="6"/>
+    <path d="M151 80v131c-17 0-31-14-31-31v-69c0-17 14-31 31-31Z" fill="url(#end)"/>
+    <path d="M410 80v131c17 0 31-14 31-31v-69c0-17-14-31-31-31Z" fill="#f7ce79" opacity=".75"/>
+    <path d="M440 144h58c27 0 48 21 48 48v19h-39v-13c0-7-5-12-12-12h-55" fill="none" stroke="#416d91" stroke-width="17" stroke-linecap="round"/>
+    <path d="M526 211v67" stroke="url(#handle)" stroke-width="22" stroke-linecap="round"/>
+    <path d="M526 278c0 17-14 30-31 30s-31-13-31-30" fill="none" stroke="#298a91" stroke-width="16" stroke-linecap="round"/>
+    <path d="M151 262h229" stroke="#f17a68" stroke-width="17" stroke-linecap="round"/>
+    <path d="M184 298h180" stroke="#59c6b1" stroke-width="14" stroke-linecap="round"/>
+  </g>
+</svg>

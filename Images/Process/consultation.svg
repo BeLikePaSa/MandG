@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Consultation illustration</title>
+  <desc id="desc">Dimensional teal and coral speech bubbles representing a painting consultation</desc>
+  <defs>
+    <linearGradient id="bubble" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#72e0cf"/><stop offset="1" stop-color="#168c92"/></linearGradient>
+    <linearGradient id="bubbleSide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#126976"/><stop offset="1" stop-color="#104653"/></linearGradient>
+    <linearGradient id="bubbleCoral" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffbd83"/><stop offset="1" stop-color="#f27664"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="12" flood-color="#173c46" flood-opacity=".25"/></filter>
+  </defs>
+  <ellipse cx="330" cy="307" rx="205" ry="22" fill="#315b65" opacity=".14"/>
+  <g filter="url(#shadow)">
+    <path d="M359 88h137c28 0 50 22 50 50v46c0 28-22 50-50 50h-43l12 34-55-34h-51c-28 0-50-22-50-50v-46c0-28 22-50 50-50Z" fill="#c95755" opacity=".34" transform="translate(0 13)"/>
+    <path d="M359 88h137c28 0 50 22 50 50v46c0 28-22 50-50 50h-43l12 34-55-34h-51c-28 0-50-22-50-50v-46c0-28 22-50 50-50Z" fill="url(#bubbleCoral)" stroke="#fff1d7" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M139 65h229c31 0 56 25 56 56v89c0 31-25 56-56 56H252l-62 44 15-44h-66c-31 0-56-25-56-56v-89c0-31 25-56 56-56Z" fill="url(#bubbleSide)" transform="translate(0 14)"/>
+    <path d="M139 65h229c31 0 56 25 56 56v89c0 31-25 56-56 56H252l-62 44 15-44h-66c-31 0-56-25-56-56v-89c0-31 25-56 56-56Z" fill="url(#bubble)" stroke="#eafff7" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M158 91h190" stroke="#c7fff0" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+    <circle cx="164" cy="158" r="10" fill="#fff1c2"/><circle cx="216" cy="158" r="10" fill="#fff1c2"/><circle cx="268" cy="158" r="10" fill="#fff1c2"/>
+  </g>
+</svg>
