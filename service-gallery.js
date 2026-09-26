@@ -1,43 +1,100 @@
 (() => {
   const gallerySets = {
     'interior-painting.html': [
-      'Images/Interior Painting/Messenger_creation_E16FE678-86ED-4F99-8DFF-221BAC8B15E4.jpeg',
-      'Images/Interior Painting/Messenger_creation_E05FB612-174C-4FFB-A856-4C6CAF57925B.jpeg',
-      'Images/Interior Painting/Messenger_creation_C2330E25-EC29-4F8C-943C-4200232567F7.jpeg',
-      'Images/Interior Painting/Messenger_creation_B2367527-78FA-423B-951E-6A8A780B0A79.jpeg',
-      'Images/Interior Painting/Messenger_creation_8A0E5F68-86FA-4450-B29F-F002A134D309.jpeg',
-      'Images/Interior Painting/Messenger_creation_6EC113BB-5D15-41DC-9AF0-894964D9DB33.jpeg',
-      'Images/Interior Painting/Messenger_creation_69C11EA5-1CD3-4C4F-865F-68BAF5165F26.jpeg',
-      'Images/Interior Painting/Messenger_creation_55CFAD57-74EB-4911-B13C-E950890B7934.jpeg',
-      'Images/Interior Painting/Messenger_creation_3D95749F-8920-4683-8615-1F3CB83440D8.jpeg',
-      'Images/Interior Painting/Messenger_creation_3962CB96-A372-4720-961F-A8296FA0C553.jpeg',
-      'Images/Interior Painting/Messenger_creation_34BC25AD-D197-4A0B-BF89-8D1005FD57C4.jpeg',
-      'Images/Interior Painting/Messenger_creation_2B43CDAE-1B17-4384-BD47-C3CB6E3D38A5.jpeg',
-      'Images/Interior Painting/Messenger_creation_26BA7356-B38B-4772-9BAA-F3F2B9A77281.jpeg',
-      'Images/Interior Painting/Messenger_creation_115A77B7-0FC8-453A-97F5-FCBD2947ACF6.jpeg',
-      'Images/Interior Painting/Messenger_creation_11130835-AFAF-4E12-A620-6BE59B1CDA18.jpeg'
+      'Images/Interior Painting/Interior (1).jpeg',
+      'Images/Interior Painting/Interior (1).jpg',
+      'Images/Interior Painting/Interior (2).jpeg',
+      'Images/Interior Painting/Interior (2).jpg',
+      'Images/Interior Painting/Interior (3).jpeg',
+      'Images/Interior Painting/Interior (3).jpg',
+      'Images/Interior Painting/Interior (4).jpeg',
+      'Images/Interior Painting/Interior (4).jpg',
+      'Images/Interior Painting/Interior (5).jpeg',
+      'Images/Interior Painting/Interior (5).jpg',
+      'Images/Interior Painting/Interior (6).jpeg',
+      'Images/Interior Painting/Interior (6).jpg',
+      'Images/Interior Painting/Interior (7).jpeg',
+      'Images/Interior Painting/Interior (7).jpg',
+      'Images/Interior Painting/Interior (8).jpeg',
+      'Images/Interior Painting/Interior (8).jpg',
+      'Images/Interior Painting/Interior (9).jpeg',
+      'Images/Interior Painting/Interior (9).jpg',
+      'Images/Interior Painting/Interior (10).jpeg',
+      'Images/Interior Painting/Interior (10).jpg',
+      'Images/Interior Painting/Interior (11).jpeg',
+      'Images/Interior Painting/Interior (11).jpg',
+      'Images/Interior Painting/Interior (12).jpeg',
+      'Images/Interior Painting/Interior (12).jpg',
+      'Images/Interior Painting/Interior (13).jpeg',
+      'Images/Interior Painting/Interior (13).jpg',
+      'Images/Interior Painting/Interior (14).jpeg',
+      'Images/Interior Painting/Interior (14).jpg',
+      'Images/Interior Painting/Interior (15).jpeg',
+      'Images/Interior Painting/Interior (15).jpg',
+      'Images/Interior Painting/Interior (17).jpg',
+      'Images/Interior Painting/Interior (18).jpg'
     ],
     'exterior-painting.html': [
-      'Images/Exterior Painting/Messenger_creation_BAF8D96E-E752-487E-80CF-1B9C407FA786.jpeg',
-      'Images/Exterior Painting/Messenger_creation_9B9DB453-5ABF-41E4-B806-6D875C7BDD70.jpeg',
-      'Images/Exterior Painting/Messenger_creation_652FC3F6-B68A-4F7C-9CC8-83B847FB6782.jpeg',
-      'Images/Exterior Painting/Messenger_creation_5FAAE04C-BE3C-414A-9AB8-D51DBDFBAE10.jpeg',
-      'Images/Exterior Painting/Messenger_creation_3ADCEA4D-53D2-4E75-B5B8-5FD72129D88E.jpeg',
-      'Images/Exterior Painting/Messenger_creation_36C75EE4-F006-42D3-B8A5-6AB32654F8F2.jpeg',
-      'Images/Exterior Painting/Messenger_creation_35A5BBB2-41B3-489F-AC4B-66B0488E8D94.jpeg'
+      'Images/Exterior Painting/Exterior Painting (1).jpeg',
+      'Images/Exterior Painting/Exterior Painting (1).jpg',
+      'Images/Exterior Painting/Exterior Painting (1).png',
+      'Images/Exterior Painting/Exterior Painting (2).jpeg',
+      'Images/Exterior Painting/Exterior Painting (2).jpg',
+      'Images/Exterior Painting/Exterior Painting (3).jpeg',
+      'Images/Exterior Painting/Exterior Painting (3).jpg',
+      'Images/Exterior Painting/Exterior Painting (4).jpeg',
+      'Images/Exterior Painting/Exterior Painting (4).jpg',
+      'Images/Exterior Painting/Exterior Painting (5).jpeg',
+      'Images/Exterior Painting/Exterior Painting (5).jpg',
+      'Images/Exterior Painting/Exterior Painting (6).jpg',
+      'Images/Exterior Painting/Exterior Painting (7).jpg',
+      'Images/Exterior Painting/Exterior Painting (8).jpg',
+      'Images/Exterior Painting/Exterior Painting (9).jpg',
+      'Images/Exterior Painting/Exterior Painting (10).jpg',
+      'Images/Exterior Painting/Exterior Painting (11).jpg',
+      'Images/Exterior Painting/Exterior Painting (12).jpg',
+      'Images/Exterior Painting/Exterior Painting (13).jpg',
+      'Images/Exterior Painting/Exterior Painting (14).jpg',
+      'Images/Exterior Painting/Exterior Painting (15).jpg',
+      'Images/Exterior Painting/Exterior Painting (16).jpg',
+      'Images/Exterior Painting/Exterior Painting (17).jpg',
+      'Images/Exterior Painting/Exterior Painting (18).jpg',
+      'Images/Exterior Painting/Exterior Painting (19).jpg',
+      'Images/Exterior Painting/Exterior Painting (20).jpg',
+      'Images/Exterior Painting/Exterior Painting (21).jpg',
+      'Images/Exterior Painting/Exterior Painting (22).jpg',
+      'Images/Exterior Painting/Exterior Painting (23).jpg',
+      'Images/Exterior Painting/Exterior Painting (24).jpg',
+      'Images/Exterior Painting/Exterior Painting (25).jpg',
+      'Images/Exterior Painting/Exterior Painting (26).jpg',
+      'Images/Exterior Painting/Exterior Painting (27).jpg',
+      'Images/Exterior Painting/Exterior Painting (28).jpg',
+      'Images/Exterior Painting/Exterior Painting (29).jpg',
+      'Images/Exterior Painting/Exterior Painting (30).jpg',
+      'Images/Exterior Painting/Exterior Painting (31).jpg'
     ],
     'prep-repairs.html': [
-      'Images/Prep & Repair/Messenger_creation_A8F10D13-64EB-45CA-9496-B93CD248A57F.jpeg',
-      'Images/Prep & Repair/Messenger_creation_2F77774C-C626-452C-B1C0-472977C23D9D.jpeg'
+      'Images/Prep & Repair/Prep & Repair (1).jpeg',
+      'Images/Prep & Repair/Prep & Repair (1).jpg',
+      'Images/Prep & Repair/Prep & Repair (1).png',
+      'Images/Prep & Repair/Prep & Repair (2).jpeg',
+      'Images/Prep & Repair/Prep & Repair (2).png',
+      'Images/Prep & Repair/Prep & Repair (3).png',
+      'Images/Prep & Repair/Prep & Repair (4).png',
+      'Images/Prep & Repair/Prep & Repair (5).png'
     ],
     'commercial-painting.html': [
-      'Images/Commercial Painting/Messenger_creation_2CC27B48-1B3B-4C01-B3AA-F7AE70F6D40B.jpeg'
+      'Images/Commercial Painting/Commercial Painting (1).jpeg'
     ],
     'decorative-finishes.html': [
-      'Images/Decorative Finishes/Messenger_creation_E76E72F5-5178-41EE-828C-393FDDDA0DCD.jpeg',
-      'Images/Decorative Finishes/Messenger_creation_8B1FB797-2607-4792-8BC8-67CC0C656606.jpeg'
+      'Images/Decorative Finishes/Decorative Finishes (1).jpeg',
+      'Images/Decorative Finishes/Decorative Finishes (2).jpeg'
     ],
-    'rental-refreshes.html': []
+    'rental-refreshes.html': [
+      'Images/Rental Refreshes/Rental Refreshes (1).jpg',
+      'Images/Rental Refreshes/Rental Refreshes (2).jpg',
+      'Images/Rental Refreshes/Rental Refreshes (3).jpg'
+    ]
   };
 
   const pageName = window.location.pathname.split('/').pop() || 'index.html';
