@@ -1,4 +1,56 @@
 (() => {
+  const mainNav = document.querySelector('.site-header .main-nav');
+  const navWrap = mainNav?.parentElement;
+
+  if (mainNav && navWrap) {
+    mainNav.id = 'main-navigation';
+    navWrap.classList.add('has-mobile-menu');
+
+    const menuToggle = document.createElement('button');
+    menuToggle.className = 'menu-toggle';
+    menuToggle.type = 'button';
+    menuToggle.setAttribute('aria-controls', mainNav.id);
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+
+    const menuIcon = document.createElement('span');
+    menuIcon.className = 'menu-toggle-icon';
+    menuIcon.setAttribute('aria-hidden', 'true');
+    menuIcon.append(document.createElement('span'), document.createElement('span'), document.createElement('span'));
+    menuToggle.append(menuIcon);
+    mainNav.before(menuToggle);
+
+    const closeMenu = () => {
+      mainNav.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    };
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
+      mainNav.classList.toggle('is-open', !isOpen);
+      menuToggle.setAttribute('aria-expanded', String(!isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+    });
+
+    mainNav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) closeMenu();
+    });
+
+    document.addEventListener('click', (event) => {
+      if (!navWrap.contains(event.target)) closeMenu();
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape') {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+
+    window.matchMedia('(min-width: 861px)').addEventListener('change', closeMenu);
+  }
+
   const gallerySets = {
     'interior-painting.html': [
       'Images/Interior Painting/Interior (1).jpeg',

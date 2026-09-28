@@ -126,6 +126,10 @@ h3 {
   border: 1px solid rgba(31, 46, 52, 0.04);
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .main-nav a {
   padding: 0.6rem 0.9rem;
   border-radius: 999px;
@@ -136,6 +140,88 @@ h3 {
   color: var(--ink);
   background: rgba(255, 255, 255, 0.6);
   transform: translateY(-1px);
+}
+
+@media (max-width: 860px) {
+  .nav-wrap.has-mobile-menu {
+    position: relative;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .nav-wrap.has-mobile-menu .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--primary-deep);
+    cursor: pointer;
+  }
+
+  .menu-toggle-icon {
+    display: grid;
+    gap: 5px;
+    width: 1.4rem;
+  }
+
+  .menu-toggle-icon span {
+    display: block;
+    height: 2px;
+    border-radius: 2px;
+    background: currentColor;
+  }
+
+  .nav-wrap.has-mobile-menu .menu-toggle:focus-visible {
+    outline: 2px solid var(--primary-deep);
+    outline-offset: 2px;
+  }
+
+  .nav-wrap.has-mobile-menu .main-nav {
+    display: none;
+    position: absolute;
+    top: calc(100% - 0.4rem);
+    right: 0;
+    z-index: 11;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0.15rem;
+    width: min(20rem, calc(100vw - 2rem));
+    padding: 0.55rem;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--panel);
+    box-shadow: var(--shadow-soft);
+  }
+
+  .nav-wrap.has-mobile-menu .main-nav.is-open {
+    display: flex;
+  }
+
+  .nav-wrap.has-mobile-menu .main-nav a {
+    border-radius: 6px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header .brand-logo {
+    width: 3.3rem;
+    height: 3.3rem;
+  }
+
+  .site-header .brand strong {
+    font-size: 1.55rem;
+  }
+
+  .site-header .brand small {
+    font-size: 0.85rem;
+  }
 }
 
 .btn {
@@ -1262,3 +1348,4 @@ h3 {
     flex-direction: column;
   }
 }
+
