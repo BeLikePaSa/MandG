@@ -326,8 +326,10 @@
         </div>
         <div class="footer-quote-column">
           <h3>Request a quote</h3>
-          <form class="footer-quote-form" id="footerQuoteForm" action="https://formsubmit.co/mgpaintingdecorating@hotmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New quote request from M&amp;G website" />
+          <form class="footer-quote-form" id="footerQuoteForm" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="62e8cac5-a2fd-44d5-b756-13fd1713f91f" />
+            <input type="hidden" name="subject" value="New quote request from M&amp;G website" />
+            <input type="hidden" name="from_name" value="M&amp;G Website Quote Form" />
             <label>
               <span>Name</span>
               <input type="text" name="name" autocomplete="name" required />
@@ -340,7 +342,8 @@
               <span>What needs painting?</span>
               <input type="text" name="service" placeholder="e.g. Interior repaint" required />
             </label>
-            <button class="btn btn-primary" type="submit">Email quote request</button>
+            <button class="btn btn-primary" type="submit">Submit</button>
+            <p class="form-status" id="footerQuoteStatus" aria-live="polite"></p>
           </form>
         </div>
       </div>

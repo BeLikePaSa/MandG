@@ -51,6 +51,41 @@
     window.matchMedia('(min-width: 861px)').addEventListener('change', closeMenu);
   }
 
+  const quoteForm = document.querySelector('#footerQuoteForm');
+
+  if (quoteForm) {
+    const submitButton = quoteForm.querySelector('button[type="submit"]');
+    const status = quoteForm.querySelector('#footerQuoteStatus');
+
+    quoteForm.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      status.textContent = '';
+
+      try {
+        const response = await fetch(quoteForm.action, {
+          method: quoteForm.method,
+          body: new FormData(quoteForm),
+          headers: { Accept: 'application/json' }
+        });
+        const result = await response.json();
+
+        if (!response.ok || !result.success) {
+          throw new Error(result.message || 'Unable to send the quote request.');
+        }
+
+        quoteForm.reset();
+        status.textContent = 'Your quote request has been sent.';
+      } catch (error) {
+        status.textContent = error.message;
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Submit';
+      }
+    });
+  }
+
   const gallerySets = {
     'interior-painting.html': [
       'Images/Interior Painting/Interior (1).jpeg',
@@ -189,7 +224,7 @@
       const startTimer = () => {
         stopTimer();
         if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-          timer = window.setInterval(() => showProject(currentIndex + 1), 5000);
+          timer = window.setInterval(() => showProject(currentIndex + 1), 2000);
         }
       };
 
