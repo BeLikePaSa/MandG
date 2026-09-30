@@ -1112,6 +1112,10 @@ h2 {
     padding-top: 3rem;
   }
 
+  .hero-logo {
+    object-position: center top;
+  }
+
   .main-nav {
     gap: 1rem;
     font-size: 0.95rem;
@@ -1128,9 +1132,6 @@ h2 {
     text-align: center;
   }
 
-  .hero-logo {
-    object-position: center top;
-  }
 }
 
 
